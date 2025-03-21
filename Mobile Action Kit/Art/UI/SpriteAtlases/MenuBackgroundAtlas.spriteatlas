@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MenuBackgroundAtlas
+  m_EditorData:
+    textureSettings:
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      colorSpace: 1
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+    platformSettings:
+    - m_BuildTarget: Android
+      m_MaxTextureSize: 1024
+      m_TextureFormat: 29
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+    packingParameters:
+      paddingPower: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    packedHash:
+      serializedVersion: 2
+      Hash: c332213d12af9548e01b5516bbd37822
+    variantMultiplier: 1
+    bindAsDefault: 1
+    finalFormat: 29
+    hashString: c332213d12af9548e01b5516bbd37822
+    totalSpriteSurfaceArea: 5242880
+    packables:
+    - {fileID: 102900000, guid: bc97ae8c1047cf14cbe3ff201ea9d05a, type: 3}
+    packedSpriteRenderDataKeys:
+    - c38cce3e47a2304429465942a16591d0: 21300000
+    - 6f35c717c456bb942afdb975d8366385: 21300000
+    - ec277669e55d6ef45a16fff649cdfe21: 21300000
+    - b479d187aa6357f4c9e4699b203aac10: 21300000
+    - 830706122c8c4864ba06cd74ac419fcc: 21300000
+    - 89a4682ecb32e3849a51d13187d43e5e: 21300000
+    - 5a32ac178050ea843bd1835bfb77aa04: 21300000
+    - 462f1bf787cb43f409fa6f071aead13d: 21300000
+    - ab3078712ea8f6e4f8aa663d88f83725: 21300000
+    - 5a745fe6d90ca7842b814087a13339fc: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c38cce3e47a2304429465942a16591d0, type: 3}
+  - {fileID: 21300000, guid: 6f35c717c456bb942afdb975d8366385, type: 3}
+  - {fileID: 21300000, guid: ec277669e55d6ef45a16fff649cdfe21, type: 3}
+  - {fileID: 21300000, guid: b479d187aa6357f4c9e4699b203aac10, type: 3}
+  - {fileID: 21300000, guid: 830706122c8c4864ba06cd74ac419fcc, type: 3}
+  - {fileID: 21300000, guid: 89a4682ecb32e3849a51d13187d43e5e, type: 3}
+  - {fileID: 21300000, guid: 5a32ac178050ea843bd1835bfb77aa04, type: 3}
+  - {fileID: 21300000, guid: 462f1bf787cb43f409fa6f071aead13d, type: 3}
+  - {fileID: 21300000, guid: ab3078712ea8f6e4f8aa663d88f83725, type: 3}
+  - {fileID: 21300000, guid: 5a745fe6d90ca7842b814087a13339fc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - MenuBackground
+  - MenuBackground8
+  - MenuBackground9
+  - MenuBackground2
+  - MenuBackground3
+  - MenuBackground1
+  - MenuBackground6
+  - MenuBackground7
+  - MenuBackground4
+  - MenuBackground5
+  m_Tag: MenuBackgroundAtlas
+  m_IsVariant: 0
