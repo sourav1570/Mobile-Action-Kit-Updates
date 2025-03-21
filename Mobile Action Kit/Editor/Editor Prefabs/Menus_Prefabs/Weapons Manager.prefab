@@ -1,0 +1,1360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1466712506082570886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2236259327430753944}
+  - component: {fileID: 6326154168542081871}
+  m_Layer: 0
+  m_Name: AR75 Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2236259327430753944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466712506082570886}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6326154168542081871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466712506082570886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AR75Scope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AR75SniperScope
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AR75_RedDot
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: AR75_Supressor
+    Weapon: {fileID: 0}
+    ItemPrice: 900
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AR75_Silencer
+    BuyText: Buy 900
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy this one ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &1556876440884992140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693851275115449718}
+  - component: {fileID: 3527450960580538591}
+  m_Layer: 0
+  m_Name: Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &693851275115449718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556876440884992140}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6561765811337430280}
+  - {fileID: 2236259327430753944}
+  - {fileID: 7354819205068919391}
+  - {fileID: 2812051172830425634}
+  - {fileID: 350467040605161866}
+  - {fileID: 382807611805135760}
+  m_Father: {fileID: 7179640765635043863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3527450960580538591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556876440884992140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d1880d8d3894f609504146238d6284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments and provides a global instance
+    to access all weapon attachment scripts.
+  AllWeaponAttachmentsScript:
+  - {fileID: 6891360725248816247}
+  - {fileID: 6326154168542081871}
+  - {fileID: 3727265762756702145}
+  - {fileID: 6025607450294869764}
+  - {fileID: 7527611158013371424}
+  - {fileID: 1978729905249406433}
+--- !u!1 &1881057898163583858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350467040605161866}
+  - component: {fileID: 7527611158013371424}
+  m_Layer: 0
+  m_Name: G17 Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350467040605161866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881057898163583858}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7527611158013371424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881057898163583858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: G17_RedDot
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: G17_Supressor
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: G17_Supressor
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &2100631376155880127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7442380084601756988}
+  - component: {fileID: 4622266940384167843}
+  m_Layer: 0
+  m_Name: Primary Weapon Slot Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7442380084601756988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100631376155880127}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.390545, z: 10.005363}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5569071829318739807}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4622266940384167843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100631376155880127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e6964cdb17f44ddad5f60b25365e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: Manages purchasable and equippable weapons in a slot-based system.
+    Handles purchasing, equipping, and saving weapon states.
+  SlotSaveKey: Primary_Slot
+  Slot: {fileID: 0}
+  BuyText: Buy
+  EquipText: Equip
+  EquippedText: Equipped
+  AddWeapons:
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 100
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 200
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 400
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 400
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  UseDefaultWeapon: 1
+  DefaultWeaponIndex: 0
+  PurchasableWeaponsManagerComponent: {fileID: 4451588911749325012}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Would you like to purchase this Primary Weapon ?
+  ShowPriceTextInConfirmationWindow: 0
+  ConfirmationWindowPriceText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  pendingWeapon:
+    WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 0
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+  DebugCurrentlyEquippedWeapon: {fileID: 0}
+--- !u!1 &2149285952841546782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6561765811337430280}
+  - component: {fileID: 6891360725248816247}
+  m_Layer: 0
+  m_Name: Ak47 Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6561765811337430280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149285952841546782}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6891360725248816247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2149285952841546782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKSniperScope
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AK_RedDot
+    BuyText: Buy 850
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Suppressor
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AK_Supressor
+    BuyText: Buy 1000
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &2351661791321009578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4441126312723995257}
+  - component: {fileID: 5054761575435573964}
+  m_Layer: 0
+  m_Name: Third Weapon Slot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4441126312723995257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351661791321009578}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.390545, z: 10.005363}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5569071829318739807}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5054761575435573964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351661791321009578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e6964cdb17f44ddad5f60b25365e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: Manages purchasable and equippable weapons in a slot-based system.
+    Handles purchasing, equipping, and saving weapon states.
+  SlotSaveKey: Third_Slot
+  Slot: {fileID: 0}
+  BuyText: Buy
+  EquipText: Equip
+  EquippedText: Equipped
+  AddWeapons: []
+  UseDefaultWeapon: 0
+  DefaultWeaponIndex: 0
+  PurchasableWeaponsManagerComponent: {fileID: 4451588911749325012}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Would you like to purchase this Secondary Weapon ?
+  ShowPriceTextInConfirmationWindow: 0
+  ConfirmationWindowPriceText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  pendingWeapon:
+    WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 0
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+  DebugCurrentlyEquippedWeapon: {fileID: 0}
+--- !u!1 &2627006924099291510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7179640765635043863}
+  m_Layer: 0
+  m_Name: Weapons Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7179640765635043863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627006924099291510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.25637, y: -8.855225, z: 90.46206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2974909167281444996}
+  - {fileID: 551311252070953931}
+  - {fileID: 693851275115449718}
+  - {fileID: 5569071829318739807}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2767828848521893294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2974909167281444996}
+  - component: {fileID: 6247959838819356035}
+  m_Layer: 0
+  m_Name: Shop Menu Weapons Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2974909167281444996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767828848521893294}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7179640765635043863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6247959838819356035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2767828848521893294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c623379691e41c8b4896e578a32d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages the player's carried weapons, ensuring equipped
+    weapons are tracked and displayed correctly across weapon slots. It interacts
+    with PlayerPrefs to save and retrieve weapon ownership and status.
+  WeaponSlots:
+  - {fileID: 4622266940384167843}
+  - {fileID: 6232310250544499495}
+  - {fileID: 5054761575435573964}
+  DisplayPurchasedWeapon: []
+--- !u!1 &3068460788745136186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551311252070953931}
+  - component: {fileID: 3183738620149914479}
+  m_Layer: 0
+  m_Name: Weapon Inspection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551311252070953931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068460788745136186}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 95.07716, y: 5.317794, z: -10.187767}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7179640765635043863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3183738620149914479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068460788745136186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86dff52b3128349ccac1aff67b75da40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script handles the weapon inspection system, allowing players
+    to zoom in on weapons, adjust the camera's field of view, and toggle UI buttons
+    accordingly.
+  InspectionCamera: {fileID: 0}
+  InspectWeaponButton: {fileID: 0}
+  ExitInspectButton: {fileID: 0}
+  Weapons:
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+  - WeaponModel: {fileID: 0}
+    FieldOfViewValue: 80
+    Duration: 1
+    ObjToDeactivate:
+    - {fileID: 0}
+--- !u!1 &3733251952030042369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7354819205068919391}
+  - component: {fileID: 3727265762756702145}
+  m_Layer: 0
+  m_Name: M4 Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7354819205068919391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733251952030042369}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3727265762756702145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3733251952030042369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M4Scope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M4SniperScope
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: M4_Supressor
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M4_Supressor
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy this one ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &8181890384258661670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5569071829318739807}
+  - component: {fileID: 4451588911749325012}
+  m_Layer: 0
+  m_Name: 'All Purchasable Weapons '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5569071829318739807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181890384258661670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7442380084601756988}
+  - {fileID: 8266623756851490601}
+  - {fileID: 4441126312723995257}
+  m_Father: {fileID: 7179640765635043863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4451588911749325012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181890384258661670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6433542497d0048a2b552865686564f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: PurchasableWeaponsManager handles the management of weapons available
+    for purchase. It ensures that only one weapon purchase confirmation is active
+    at a time and interacts with ShootingWeaponsSlotManager to manage pending purchases.
+  WeaponSlots:
+  - {fileID: 4622266940384167843}
+  - {fileID: 6232310250544499495}
+  - {fileID: 5054761575435573964}
+--- !u!1 &8415308599808963871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382807611805135760}
+  - component: {fileID: 1978729905249406433}
+  m_Layer: 0
+  m_Name: M11 Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &382807611805135760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415308599808963871}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978729905249406433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8415308599808963871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M11_Scope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M11_RedDot
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: M11_Supressor
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: M11_Supressor
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &8531361491696271594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2812051172830425634}
+  - component: {fileID: 6025607450294869764}
+  m_Layer: 0
+  m_Name: SVK Weapon Attachments
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2812051172830425634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531361491696271594}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.3905454, z: 10.005356}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693851275115449718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6025607450294869764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8531361491696271594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e1c78079dc9847f7ae268867408cb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: This script manages weapon attachments, allowing players to purchase,
+    equip, and unequip them while ensuring only one attachment per category is equipped
+    at a time.
+  inventoryItems:
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: SvkScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: SvkSniperScope
+    BuyText: Buy 750
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: Svk_RedDot
+    BuyText: Buy 850
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  - Category: Svk_Suppressor
+    Weapon: {fileID: 0}
+    ItemPrice: 750
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: Svk_Silencer
+    BuyText: Buy 1000
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+    ObjectsToDeactivateAfterPurchase:
+    - {fileID: 0}
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+  WeaponAttachmentsManagerComponent: {fileID: 3527450960580538591}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Wanna Buy ?
+  ShowItemPrice: 1
+  BuyText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  currentItemToPurchase:
+    Category: Scope
+    Weapon: {fileID: 0}
+    ItemPrice: 500
+    BuyButton: {fileID: 0}
+    UniqueNameForSavingData: AKScope
+    BuyText: Buy 500
+    EquippedText: Equip
+    UnequippedText: Unequip
+    BuyButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+    ObjectsToDeactivateAfterPurchase: []
+    isEquipped: 0
+    isPurchased: 0
+    purchaseStatusKey: 
+    shopMoneyKey: ShopMoney
+    parentScript: {fileID: 0}
+--- !u!1 &8962607027889875414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8266623756851490601}
+  - component: {fileID: 6232310250544499495}
+  m_Layer: 0
+  m_Name: Secondary Weapon Slot Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8266623756851490601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962607027889875414}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.70223, y: 4.390545, z: 10.005363}
+  m_LocalScale: {x: 1.0001175, y: 1.0001175, z: 1.0001175}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5569071829318739807}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6232310250544499495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962607027889875414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e6964cdb17f44ddad5f60b25365e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: Manages purchasable and equippable weapons in a slot-based system.
+    Handles purchasing, equipping, and saving weapon states.
+  SlotSaveKey: Secondary_Slot
+  Slot: {fileID: 0}
+  BuyText: Buy
+  EquipText: Equip
+  EquippedText: Equipped
+  AddWeapons:
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 100
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  - WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 200
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase:
+    - {fileID: 0}
+  UseDefaultWeapon: 0
+  DefaultWeaponIndex: 0
+  PurchasableWeaponsManagerComponent: {fileID: 4451588911749325012}
+  UseConfirmationWindow: 1
+  confirmationWindow: {fileID: 0}
+  ConfirmationText: {fileID: 0}
+  ConfirmationMessage: Would you like to purchase this Secondary Weapon ?
+  ShowPriceTextInConfirmationWindow: 0
+  ConfirmationWindowPriceText: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
+  pendingWeapon:
+    WeaponIdScript: {fileID: 0}
+    Weapon: {fileID: 0}
+    BuyButton: {fileID: 0}
+    EquipButton: {fileID: 0}
+    WeaponPrice: 0
+    PriceText: {fileID: 0}
+    EquipButtonText: {fileID: 0}
+    ObjectsToActivateAfterPurchase: []
+  DebugCurrentlyEquippedWeapon: {fileID: 0}
