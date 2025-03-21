@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8473208799874286116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8516287373374789796}
+  - component: {fileID: 7883125843293895450}
+  - component: {fileID: 1183523239185375628}
+  m_Layer: 0
+  m_Name: ItemCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8516287373374789796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473208799874286116}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7883125843293895450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473208799874286116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b96e7dfe95c71841940bdda24acc9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptInfo: Manages item usage, updates UI elements, handles item interactions,
+    and invokes custom user-defined functions when items are used or game restarts.
+  ItemName: Health_Pack_Item
+  GameobjectsToDeactivateOnUIButtonClick: []
+  GameobjectsDeactivationDelay: 0
+  ItemTexts:
+  - {fileID: 0}
+  DefaultItems: 2
+  CanMaximumCarry: 3
+  ItemUIButtons:
+  - {fileID: 0}
+  TimeToEnableButtons: 2
+  CurrentlyCarried: 0
+  AddScript: {fileID: 1183523239185375628}
+  FunctionToInvokeWhenUsing: IncreaseHealth
+  FunctionToInvokeWhenGameRestart: NoFunction
+--- !u!114 &1183523239185375628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473208799874286116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9978d401d1a9e4d20964e520c90208ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthToIncrease: 25
