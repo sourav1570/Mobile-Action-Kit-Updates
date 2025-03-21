@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: db46a8d0d2d29c546aa491d463b1ec7d
+timeCreated: 1521532151
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Alfa Slab One
+  fontNames:
+  - Alfa Slab One
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
